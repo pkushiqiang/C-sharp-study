@@ -1,0 +1,2 @@
+June 9th, 2013
+1. create a new test project, and upload to git hub
