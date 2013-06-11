@@ -1,9 +1,9 @@
 ﻿<Page
-    x:Class="TestUIApp1.MainPage"
+    x:Class="FileManage.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:TestUIApp1"
-    xmlns:notecontrol="using:TestUIApp1.NoteControls"
+    xmlns:local="using:FileManage"
+    xmlns:controls ="using:FileManage.controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -14,8 +14,8 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <notecontrol:SidePanel Grid.Column="0" ></notecontrol:SidePanel>
-
-        <Canvas Grid.Column="1"  Background="#FF81B08E" ></Canvas>
+        <controls:LeftPanel Grid.Column="0" ></controls:LeftPanel>
+        <controls:RightPanel Grid.Column="1" Background="Red"></controls:RightPanel>
+        
     </Grid>
 </Page>
